@@ -33,9 +33,7 @@ export default () => (
         <StyContainer>
             <StyHead>Contact Us</StyHead>
             <StyLine />
-            <Contactform>
-
-            </Contactform>
+            <Contactform />
         </StyContainer>
     </Layout>
 )

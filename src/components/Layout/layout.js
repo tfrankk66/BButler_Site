@@ -3,6 +3,7 @@ import Navbar from "../Navigation/NavBar"
 import styled from "styled-components"
 import Footer from "../Footer/Footer"
 import "typeface-roboto"
+import SEO from "../SEO/Seo"
 
 const StyDiv = styled.div`
     font-family: "roboto";
@@ -14,6 +15,7 @@ const StyDiv = styled.div`
 
 export default ({children}) => (
     <StyDiv>
+        
         <Navbar/>
         {children}
         <Footer/>

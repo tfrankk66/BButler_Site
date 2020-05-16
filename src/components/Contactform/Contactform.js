@@ -82,7 +82,7 @@ const StyLabel = styled.p`
 export default () => (
     <StyContainer>
         <StyForm method="post" action="https://formspree.io/mnqbpqya">
-                <StyLabel>Please leave your infoooooo and well get back to you as soon as possible!</StyLabel>
+                <StyLabel>Please leave your info and well get back to you as soon as possible!</StyLabel>
                 <StyInput type="name" name="Name" placeholder="Full Name" required/>
                 <StyInput type="tel" name="Phone Number" placeholder="Phone Number" required/>
                 <StyInput type="email" name="Email" placeholder="Email Address" required/>
