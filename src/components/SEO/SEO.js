@@ -1,6 +1,7 @@
 
 import React from "react"
 import PropTypes from "prop-types"
+import favicon from "../../images/favicon.ico"
 import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 
@@ -62,6 +63,9 @@ function SEO({ description, lang, meta, title }) {
           content: metaDescription,
         },
       ].concat(meta)}
+      link={[
+        {rel: "icon", type: "image/ico", href: `${favicon}`}
+      ]}
     />
   )
 }
