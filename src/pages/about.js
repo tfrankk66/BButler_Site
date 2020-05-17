@@ -1,6 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import Layout from "../components/Layout/layout"
+import SEO from "../components/SEO/SEO"
 
 const StyContainer = styled.div`
     display: flex;
@@ -71,6 +72,7 @@ const StyDesc = styled.p`
 
 export default () => (
     <Layout>
+        <SEO title="About Us" />
         <StyContainer>
            <StyHead marg>About Us</StyHead>
            <StyPoints>

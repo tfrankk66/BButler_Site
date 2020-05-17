@@ -2,6 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import Layout from "../components/Layout/layout"
 import Contactform from "../components/Contactform/Contactform"
+import SEO from "../components/SEO/SEO"
 
 const StyContainer = styled.div`
     display: flex;
@@ -30,6 +31,7 @@ const StyLine = styled.div`
 `
 export default () => (
     <Layout>
+        <SEO title="Contact Us" />
         <StyContainer>
             <StyHead>Contact Us</StyHead>
             <StyLine />
