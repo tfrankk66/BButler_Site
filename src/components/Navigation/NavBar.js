@@ -105,7 +105,7 @@ const NavBar = () => {
                 <StyDash />
                 <StyledLink to="/about">About</StyledLink>
                 <StyDash />
-                <StyledLink to="/contact">Services</StyledLink>  
+                <StyledLink to="/services">Services</StyledLink>  
                 <StyDash />
                 <StyledLink to="/contact">Contact Us</StyledLink> 
             </StyledMenuGroup>

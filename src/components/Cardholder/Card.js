@@ -62,7 +62,7 @@ const Card = (props) => {
             <CardH>
               <Img fixed={props.image} />
             </CardH>
-            <StyLink to="/about">Learn More</StyLink>
+            <StyLink to="/services">Learn More</StyLink>
           </StyCard>
         )
       case '2':
@@ -72,7 +72,7 @@ const Card = (props) => {
               <CardH large>
                 <Img fixed={props.image} />
               </CardH>
-              <StyLink to="/about">Learn More</StyLink>
+              <StyLink to="/services">Learn More</StyLink>
             </StyCard>
           )
       case '3':
@@ -82,7 +82,7 @@ const Card = (props) => {
             <CardH>
               <Img fixed={props.image} />
             </CardH>
-            <StyLink to="/about">Learn More</StyLink>
+            <StyLink to="/services">Learn More</StyLink>
           </StyCard>
         )
       default:
