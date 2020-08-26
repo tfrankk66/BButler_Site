@@ -53,6 +53,7 @@ const ConnectGroup = styled.div`
 const IconEvn = styled(FaEnvelope)`
     align-self: center;
     margin: 5px;
+    color: white;
 
     &:hover {
         color: #971B2F;
@@ -66,6 +67,7 @@ const IconEvn = styled(FaEnvelope)`
 const IconPhone = styled(MdPhoneInTalk)`
     align-self: center;
     margin: 5px;
+    color: white;
     &:hover {
         color: #971B2F;
         transition: color 0.2s, -webkit-transform 0.2s ease-out;
@@ -77,6 +79,7 @@ const IconPhone = styled(MdPhoneInTalk)`
 const IconFB = styled(FaFacebookSquare)`
     align-self: center;
     margin: 5px;
+    color: white;
     &:hover {
         color: #971B2F;
         transition: color 0.2s, -webkit-transform 0.2s ease-out;
@@ -92,15 +95,15 @@ const ConnectDesc = styled.p`
 
 export default () => (
     <StyledFoot>
-        <Copyright>Copyright © 2019 IdentityWorX</Copyright>
+        <Copyright>Copyright © 2020 IdentityWorX</Copyright>
         <ConnectedDiv>
             <ConnectHead>Stay Connected!</ConnectHead>
             <ConnectGroup>
-                <IconEvn />
+                <a href="mailto:Bob@identitywrx.com"><IconEvn /></a>
                 <ConnectDesc>Bob@identitywrx.com</ConnectDesc>
             </ConnectGroup>
             <ConnectGroup>
-                <IconPhone />
+                <a href="tel:1-678-909-8976"><IconPhone /></a>
                 <ConnectDesc>678-909-8976</ConnectDesc>
             </ConnectGroup>
             <ConnectGroup>

@@ -1,11 +1,13 @@
 import React from "react"
 import styled from "styled-components"
 import Layout from "../components/Layout/layout"
+import ServiceList from "../components/Servicelist/Servicelist"
 import SEO from "../components/SEO/SEO"
 
 const StyContainer = styled.div`
     display: flex;
     margin-top: 85px;
+    margin-bottom: 30px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -34,6 +36,7 @@ export default () => (
         <StyContainer>
             <StyHead>Our Services</StyHead>
             <StyLine />
+            <ServiceList />
         </StyContainer>
     </Layout>
 )

@@ -5,7 +5,6 @@ const StyContainer = styled.div`
     width: 25%;
     background-color: #e3e3e3;
     display: flex;
-    margin-bottom: 200px;
     justify-content: center;
     border-radius: 5px;
 `

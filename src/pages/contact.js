@@ -3,6 +3,8 @@ import styled from "styled-components"
 import Layout from "../components/Layout/layout"
 import Contactform from "../components/Contactform/Contactform"
 import SEO from "../components/SEO/SEO"
+import Orsymbol from "../components/OrSymbol/Orsymbol"
+import Contactinfo from "../components/Contactinfo/Contactinfo"
 
 const StyContainer = styled.div`
     display: flex;
@@ -27,17 +29,29 @@ const StyLine = styled.div`
     background: -moz-linear-gradient(left, #ffffff 0%, #971B2F 20%, #971B2F 80%, #e5e5e5 100%); /* FF3.6-15 */
     background: -webkit-linear-gradient(left, #ffffff 0%,#971B2F 20%,#971B2F 80%,#e5e5e5 100%); /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(to right, #ffffff 0%,#971B2F 20%,#971B2F 80%,#e5e5e5 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */background-color: #101820;
-
 `
+const StyContactCont = styled.div`
+    display: flex;
+    flex-direction: row;
+    height: 650px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+`
+
 export default () => (
     <Layout>
         <SEO title="Contact Us" />
         <StyContainer>
             <StyHead>Contact Us</StyHead>
             <StyLine />
-            <Contactform>
+            <StyContactCont>
+                <Contactform />
+                <Orsymbol />
+                <Contactinfo />
 
-            </Contactform>
+            </StyContactCont>
+            
         </StyContainer>
     </Layout>
 )

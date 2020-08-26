@@ -84,6 +84,10 @@ const StyDash = styled.div`
       align-self: center;
 `;
 
+const StyAnnounce = styled(Link)`
+      color: #971B2F;
+`
+
 const NavBar = () => {
   const data = useStaticQuery(graphql`
         query Header {
@@ -100,6 +104,7 @@ const NavBar = () => {
     return(
         <StyledBar>
             <StyledHeader><Img fixed={data.image.childImageSharp.fixed} /></StyledHeader>
+            <StyAnnounce to="/services#test">**WE ARE NOW SELLING PERSONALIZED MASKS**</StyAnnounce>
             <StyledMenuGroup>
                 <StyledLink to="/">Home</StyledLink>
                 <StyDash />
