@@ -85,6 +85,7 @@ const IconFB = styled(FaFacebookSquare)`
         transition: color 0.2s, -webkit-transform 0.2s ease-out;
         transition: color 0.2s, transform 0.2s ease-out;
         transition: color 0.2s, transform 0.2s ease-out, -webkit-transform 0.2s ease-out;
+        cursor: pointer;
     }
 `;
 

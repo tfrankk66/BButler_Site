@@ -85,7 +85,15 @@ const StyDash = styled.div`
 `;
 
 const StyAnnounce = styled(Link)`
+      font-weight: 600;
+      font-size: 115%;
       color: #971B2F;
+      &:hover {
+        color: #691321;
+        transition: color 0.2s, -webkit-transform 0.2s ease-out;
+        transition: color 0.2s, transform 0.2s ease-out;
+        transition: color 0.2s, transform 0.2s ease-out, -webkit-transform 0.2s ease-out;
+      }
 `
 
 const NavBar = () => {
@@ -104,7 +112,7 @@ const NavBar = () => {
     return(
         <StyledBar>
             <StyledHeader><Img fixed={data.image.childImageSharp.fixed} /></StyledHeader>
-            <StyAnnounce to="/services#test">**WE ARE NOW SELLING PERSONALIZED MASKS**</StyAnnounce>
+            <StyAnnounce to="/services">**WE ARE NOW SELLING PERSONALIZED MASKS**</StyAnnounce>
             <StyledMenuGroup>
                 <StyledLink to="/">Home</StyledLink>
                 <StyDash />
