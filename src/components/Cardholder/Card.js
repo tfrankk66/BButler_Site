@@ -78,7 +78,7 @@ const Card = (props) => {
       case '3':
         return(
           <StyCard>
-            <StyHead>Other Services</StyHead>
+            <StyHead>Personalized Masks</StyHead>
             <CardH>
               <Img fixed={props.image} />
             </CardH>

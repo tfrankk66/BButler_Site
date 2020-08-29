@@ -39,7 +39,7 @@ const Cardholder = () => {
             }
           }
 
-          image1: file(relativePath: { eq: "V Cap Back.png" }) {
+          image1: file(relativePath: { eq: "Jersey Name & Number.png" }) {
             childImageSharp {
               fixed(width: 375, height: 350, cropFocus: CENTER) {
                 ...GatsbyImageSharpFixed
@@ -47,9 +47,9 @@ const Cardholder = () => {
             }
           }
 
-          image2: file(relativePath: { eq: "AK Hoodie Front.png" }) {
+          image2: file(relativePath: { eq: "1_Front View Black.jpg" }) {
             childImageSharp {
-              fixed(width: 200, height: 225, cropFocus: CENTER) {
+              fixed(width: 150, height: 225, cropFocus: CENTER) {
                 ...GatsbyImageSharpFixed
               }
             }

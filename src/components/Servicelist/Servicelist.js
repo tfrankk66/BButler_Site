@@ -38,7 +38,7 @@ const StyDiv = styled.div`
     align-items: center;
     justify-content: center;
     width: 800px;
-    height: 225px;
+    height: 250px;
 `
 const StyImg = styled(Img)`
     margin: 0px 20px 0px 20px;
@@ -77,7 +77,7 @@ const Servicelist = () => {
                     node {
                     base
                     childImageSharp {
-                        fluid(maxWidth: 200) {
+                        fluid(maxHeight: 200) {
                         base64
                         aspectRatio
                         sizes
