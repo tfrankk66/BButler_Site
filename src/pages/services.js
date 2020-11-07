@@ -21,7 +21,7 @@ const StyHead = styled.h1`
 `
 
 const StyLine = styled.div`
-    margin: 20px 0px 30px 0px;    
+    margin: 10px 0px -30px 0px;    
     width: 75%;
     height: 1px;
     background: #ffffff; /* Old browsers */

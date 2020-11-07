@@ -60,7 +60,7 @@ const Cardholder = () => {
 
     return(
       <StyContainer>
-        <StyHead>Personalized Products!</StyHead>
+        <StyHead>Personalized Products</StyHead>
         <StyCardContainer>
           <Card desc={'1'} image={data.image.childImageSharp.fixed} />
           <Card desc={'2'} image={data.image1.childImageSharp.fixed}/>

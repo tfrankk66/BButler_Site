@@ -29,14 +29,14 @@ const StyBio = styled.div`
     border-radius: 10px;
     align-items: center;
     justify-content: space-around;
-    box-shadow: 0px 7px 10px 2px #000000;
+    box-shadow: 0px 3px 10px 2px #000000;
 `;
 
 const StyPar = styled.p`
     color: white;
-    width: 95%;
-    font-weight: 500;
-    font-size: 130%;
+    width: 92%;
+    font-weight: 400;
+    font-size: 150%;
 `;
 
 const StyPoints = styled.div`
@@ -83,7 +83,6 @@ export default () => (
                <StyRedLetter>E</StyRedLetter><StyDesc>xperienced</StyDesc>
            </StyPoints>
             <StyBio>
-                <StyHead head>Who is Bob?</StyHead>
                 <StyPar>
                         A So-Called “Army Brat”, Bob Butler was born in San Francisco CA but was not there long. Being raised in an army family saw him move from state to state venturing through California, Kentucky, Florida and then 
                     finally landing in Georgia. Being one of six children, Bob grew up in a household that instilled a strong sense of work ethic and pride in everything you do. Bob learned early from his father to never give up on 

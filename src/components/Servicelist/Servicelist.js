@@ -13,8 +13,8 @@ const StyContainer = styled.div`
 
 const StyGrid = styled.div`
     display: flex;
-    flex-direction: row;
-    justify-content center;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
     width: 100%;
 `
@@ -24,9 +24,10 @@ const StyleServContainer = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    height: 450px;
-    margin: 20px 20px 20px 20px;
-    width: 45%;
+    padding: 40px 20px;
+    height: 650px;
+    margin: 85px 20px 20px 20px;
+    width: 85%;
     border: 5px solid;
     border-image-slice: 1;
     border-image-source: linear-gradient(to left, #E93E5A, #6B1321);
@@ -37,8 +38,8 @@ const StyDiv = styled.div`
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    width: 800px;
-    height: 250px;
+    width: 1000px;
+    height: 350px;
 `
 const StyImg = styled(Img)`
     margin: 0px 20px 0px 20px;
@@ -49,7 +50,9 @@ const StyImg = styled(Img)`
 `
 
 const StyHead = styled.h1`
-    font-weight: 500;
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 275%
 `
 
 const StyDescDiv = styled.div`
@@ -60,9 +63,14 @@ const StyDescDiv = styled.div`
 `
 
 const StyDescript = styled.p`
-    font-weight: 500;
-    font-size: 120%;
+    font-weight: 400;
+    font-size: 150%;
     text-align: center;
+`
+
+const StyTarg = styled.div`
+    height: 10px;
+    width: 1px;
 `
 
 
@@ -151,6 +159,7 @@ const Servicelist = () => {
     return(
         <StyContainer>
             <StyGrid>
+                <StyTarg id='test1'/>
                 <StyleServContainer>
                     <StyHead>Sportswear Named and Numbered</StyHead>
                     <StyDiv>
@@ -162,9 +171,10 @@ const Servicelist = () => {
                         ))}
                     </StyDiv>
                     <StyDescDiv>
-                    <StyDescript>All types of sports related items can be personalized with a name or number or both. In addition to team logos. Uniforms, gear bags, back pakcs, tote bags or any team related items. Individualized for each member of your crew.</StyDescript>
+                    <StyDescript>All types of sports related items can be personalized with a name, number, logo or all of the above. Uniforms, gear bags, backpacks, tote bags or any team related items make great personalized items. Any of these items individualized for each member of your team.</StyDescript>
                     </StyDescDiv>
                 </StyleServContainer>  
+                <StyTarg id='test2'/>
                 <StyleServContainer>
                     <StyHead>Personalized Masks</StyHead>
                     <StyDiv>
@@ -181,6 +191,7 @@ const Servicelist = () => {
                 </StyleServContainer>      
             </StyGrid>
             <StyGrid>
+                <StyTarg id='test3'/>
                 <StyleServContainer>
                     <StyHead>Vinyl Cut Heat Transfers</StyHead>
                     <StyDiv>
@@ -192,10 +203,10 @@ const Servicelist = () => {
                         ))}
                     </StyDiv>
                     <StyDescDiv>
-                        <StyDescript>An Inexpensive way to decorate small quantities of items. Vinyl cut transfers adhere to cotton, polyester, nylons and other materials. Great for individuals, groups, organizations or company needs. Can be used to create prop prototypes or one of a kind items!</StyDescript>
+                        <StyDescript>An Inexpensive way to decorate small quantities of items. Vinyl cut transfers adhere to cotton, polyester, nylons and most other materials. Great for individuals, groups, organizations or company needs. Can be used to create prop prototypes or one of a kind items!</StyDescript>
                     </StyDescDiv>
                 </StyleServContainer>       
-                <StyleServContainer>
+                <StyleServContainer id='test4'>
                     <StyHead>Other Options</StyHead>
                     <StyDiv>
                         {data.other.edges.map(image => (
@@ -206,7 +217,7 @@ const Servicelist = () => {
                         ))}
                     </StyDiv>
                     <StyDescDiv>
-                        <StyDescript>Detailed art items that cannot be produced in vinyl cut transfers or require specific colors can be screen printed. Also a more economical option for larger quantities of garments and other printable items.</StyDescript>
+                        <StyDescript>Detailed art items that cannot be produced in vinyl cut transfers or require specific colors can be screen printed. Screen printing is normally a more economical option for larger quantities of garments and other printable items as well.</StyDescript>
                     </StyDescDiv>
                 </StyleServContainer>       
             </StyGrid>

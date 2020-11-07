@@ -112,7 +112,7 @@ const NavBar = () => {
     return(
         <StyledBar>
             <StyledHeader><Img fixed={data.image.childImageSharp.fixed} /></StyledHeader>
-            <StyAnnounce to="/services">**WE ARE NOW SELLING PERSONALIZED MASKS**</StyAnnounce>
+            <StyAnnounce to="/services/#test2">**WE ARE NOW SELLING PERSONALIZED MASKS**</StyAnnounce>
             <StyledMenuGroup>
                 <StyledLink to="/">Home</StyledLink>
                 <StyDash />
