@@ -38,14 +38,15 @@ const StyDiv = styled.div`
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    width: 1000px;
-    height: 350px;
+    width: 90%;
+    height: 90%;
 `
 const StyImg = styled(Img)`
     margin: 0px 20px 0px 20px;
     width: 40%;
     height: inherit;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: white;
     
 `
 
@@ -77,7 +78,7 @@ const StyTarg = styled.div`
 const Servicelist = () => {
     const data = useStaticQuery(graphql`
             query {
-                sports: allFile(limit: 3
+                sports: allFile(skip: 3, limit: 3
                                 filter: {extension: {regex: "/(png)/"}, relativeDirectory: {eq: "clothes"}}
                                 sort: {fields: name, order: ASC}
                 ) {
@@ -85,7 +86,7 @@ const Servicelist = () => {
                     node {
                     base
                     childImageSharp {
-                        fluid(maxHeight: 200) {
+                        fluid(maxWidth: 300, maxHeight: 270, cropFocus: CENTER, fit: CONTAIN, quality: 100, background: "rgba(0, 0, 0, 0)") {
                         base64
                         aspectRatio
                         sizes
@@ -96,7 +97,7 @@ const Servicelist = () => {
                     }
                 }
                 }
-                vinyl: allFile(skip: 3, limit: 3
+                vinyl: allFile(skip: 6, limit: 3
                     filter: {extension: {regex: "/(png)/"}, relativeDirectory: {eq: "clothes"}}
                     sort: {fields: name, order: ASC}
                 ) {
@@ -104,7 +105,7 @@ const Servicelist = () => {
                     node {
                     base
                     childImageSharp {
-                        fluid(maxWidth: 200) {
+                        fluid(maxWidth: 300, maxHeight: 265, cropFocus: CENTER, fit: CONTAIN, quality: 100, background: "rgba(0, 0, 0, 0)") {
                         base64
                         aspectRatio
                         sizes
@@ -115,7 +116,7 @@ const Servicelist = () => {
                     }
                 }
                 }
-                mask: allFile(skip: 6, limit: 3
+                mask: allFile(limit: 3
                     filter: {extension: {regex: "/(png)/"}, relativeDirectory: {eq: "clothes"}}
                     sort: {fields: name, order: ASC}
                 ) {
@@ -123,7 +124,7 @@ const Servicelist = () => {
                     node {
                     base
                     childImageSharp {
-                        fluid(maxWidth: 200) {
+                        fluid(maxWidth: 300, maxHeight: 300, cropFocus: CENTER, fit: CONTAIN, quality: 100, background: "rgba(0, 0, 0, 0)") {
                         base64
                         aspectRatio
                         sizes
@@ -134,7 +135,7 @@ const Servicelist = () => {
                     }
                 }
                 }
-                other: allFile(skip: 6, limit: 3
+                other: allFile(skip: 9, limit: 3
                     filter: {extension: {regex: "/(png)/"}, relativeDirectory: {eq: "clothes"}}
                     sort: {fields: name, order: ASC}
                 ) {
@@ -142,7 +143,7 @@ const Servicelist = () => {
                     node {
                     base
                     childImageSharp {
-                        fluid(maxWidth: 200) {
+                        fluid(maxWidth: 300, maxHeight: 270, cropFocus: CENTER, fit: CONTAIN, quality: 100, background: "rgba(0, 0, 0, 0)") {
                         base64
                         aspectRatio
                         sizes
