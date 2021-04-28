@@ -135,7 +135,7 @@ const Servicelist = () => {
                     }
                 }
                 }
-                other: allFile(skip: 9, limit: 3
+                other: allFile(skip: 8, limit: 3
                     filter: {extension: {regex: "/(png)/"}, relativeDirectory: {eq: "clothes"}}
                     sort: {fields: name, order: ASC}
                 ) {
@@ -160,7 +160,7 @@ const Servicelist = () => {
     return(
         <StyContainer>
             <StyGrid>
-                <StyTarg id='test1'/>
+                <StyTarg id='service1'/>
                 <StyleServContainer>
                     <StyHead>Sportswear Named and Numbered</StyHead>
                     <StyDiv>
@@ -175,7 +175,7 @@ const Servicelist = () => {
                     <StyDescript>All types of sports related items can be personalized with a name, number, logo or all of the above. Uniforms, gear bags, backpacks, tote bags or any team related items make great personalized items. Any of these items individualized for each member of your team.</StyDescript>
                     </StyDescDiv>
                 </StyleServContainer>  
-                <StyTarg id='test2'/>
+                <StyTarg id='service2'/>
                 <StyleServContainer>
                     <StyHead>Personalized Masks</StyHead>
                     <StyDiv>
@@ -187,12 +187,12 @@ const Servicelist = () => {
                         ))}
                     </StyDiv>
                     <StyDescDiv>
-                        <StyDescript>Lorem ipsum dolor sit amet, nec nibh justo nihil ea, choro voluptua euripidis sit eu. Qui diam eruditi graecis an. Quas nostrud consulatu ea pri. In mea officiis consulatu, usu et virtute dolorem qualisque.</StyDescript>
+                        <StyDescript>Masks can be printed or decorated with heat transfers. Can be positioned in the center or the left or right cheek. Put your logo on one cheek and your employees name on the other cheek. Lets your customers know who your employees are and helps employee know which mask is theirs.</StyDescript>
                     </StyDescDiv>
                 </StyleServContainer>      
             </StyGrid>
             <StyGrid>
-                <StyTarg id='test3'/>
+                <StyTarg id='service3'/>
                 <StyleServContainer>
                     <StyHead>Vinyl Cut Heat Transfers</StyHead>
                     <StyDiv>
@@ -207,7 +207,7 @@ const Servicelist = () => {
                         <StyDescript>An Inexpensive way to decorate small quantities of items. Vinyl cut transfers adhere to cotton, polyester, nylons and most other materials. Great for individuals, groups, organizations or company needs. Can be used to create prop prototypes or one of a kind items!</StyDescript>
                     </StyDescDiv>
                 </StyleServContainer>       
-                <StyleServContainer id='test4'>
+                <StyleServContainer id='service4'>
                     <StyHead>Other Options</StyHead>
                     <StyDiv>
                         {data.other.edges.map(image => (

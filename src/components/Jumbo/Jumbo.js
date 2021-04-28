@@ -23,7 +23,7 @@ const ParHolder = styled.div`
 `;
 
 
-const StyPar = styled.text`
+const StyPar = styled.p`
     color: ${props => props.primary ? "#971B2F" : "black"};
     margin: 0px 3px 0px 3px;
     font-weight: 600;

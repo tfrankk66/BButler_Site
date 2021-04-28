@@ -1,0 +1,24 @@
+$primary-color: #971B2F;
+$secondary-color: DarkGray;
+$phone: 320px;
+$tablet: 768px;
+$desktop: 1200px;
+
+@mixin mediaPhone($size1, $size2) {
+    @media(min-width: #{$size1}) and (max-width: #{size2 - 1px}) {
+        @content;
+    }
+}
+
+@mixin mediaTablet($size1, $size2) {
+    @media (min-width: #{$size1}) and (max-width: #{$size2 - 1px})
+    {
+        @content;
+    }
+}
+
+@mixin mediaDesktop($size1) {
+    @media(min-width: #{$size1}) {
+        @content;
+    }
+}

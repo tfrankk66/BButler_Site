@@ -24,8 +24,7 @@ const StyBio = styled.div`
     display: flex;
     flex-direction: column;
     background-color: #971B2F;
-    height: 700px;
-    width: 80%;
+    width: 95%;
     border-radius: 10px;
     align-items: center;
     justify-content: space-around;

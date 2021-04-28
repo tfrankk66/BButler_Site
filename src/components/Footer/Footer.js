@@ -1,6 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import { FaEnvelope } from "react-icons/fa"
+
 import { MdPhoneInTalk } from "react-icons/md"
 import { FaFacebookSquare } from "react-icons/fa"
 
@@ -96,7 +97,7 @@ const ConnectDesc = styled.p`
 
 export default () => (
     <StyledFoot>
-        <Copyright>Copyright © 2020 IdentityWorX</Copyright>
+        <Copyright>Copyright © 2021 IdentityWorX</Copyright>
         <ConnectedDiv>
             <ConnectHead>Stay Connected!</ConnectHead>
             <ConnectGroup>

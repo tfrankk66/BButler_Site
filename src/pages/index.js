@@ -6,7 +6,7 @@ import SliderCon from "../components/SliderCon/SliderCon"
 import SEO from "../components/SEO/SEO"
 
 
-export default ({data}) => (
+export default () => (
     <Layout>
         <SEO title="Home" />
         <Jumbo />

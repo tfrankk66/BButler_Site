@@ -1,33 +1,22 @@
-import React from "react"
+import React, { useState } from "react"
 import styled from "styled-components"
 import { Link } from "gatsby"
+import { FaBars } from 'react-icons/fa'
 import Img from "gatsby-image"
 import { graphql, useStaticQuery } from "gatsby"
-
-const StyledBar = styled.div`
-    background-color: DarkGray;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    height: 48px;
-    position: fixed;
-    top: 0;
-    box-shadow: 0px 1px 3px grey;
-    border-bottom: 1px solid grey;
-    z-index: 1;
-`;
+import '../../styles/mainPage.scss';
 
 const StyledLink = styled(Link)`
     text-decoration: none;
-    margin: 0 12px;
+    text-align: center;
+    white-space: nowrap;
+    margin: 0em .5em 0em .5em;
     transition: color 0.1s, background-color 0.1s;
     color: white;
     font-size: large;
-    margin-top: 13px;
+    width: 45%;
+    height: 50%;
 
-  
     &:hover {
         color: #971B2F;
       }
@@ -62,31 +51,18 @@ const StyledLink = styled(Link)`
       }
 `
 
-const StyledMenuGroup = styled.div`
-      display: flex;
-      flex-direction: row;
-      align-items: baseline;
-      justify-content: baseline;
-
-`;
-
-const StyledHeader = styled.h2`
-      color: #971B2F;
-      display: flex;
-      padding: 15px;
-`;
-
 const StyDash = styled.div`
       background-color: white;
-      height: 5px;
-      width: 5px;
+      margin: 0em .3em 0em .3em;
+      height: 10%;
+      width: 3.5%;
       display: flex;
-      align-self: center;
 `;
 
 const StyAnnounce = styled(Link)`
       font-weight: 600;
       font-size: 115%;
+      margin: 0;
       color: #971B2F;
       &:hover {
         color: #691321;
@@ -97,6 +73,8 @@ const StyAnnounce = styled(Link)`
 `
 
 const NavBar = () => {
+  const [hamToggle, setHamToggle] = useState(false);
+
   const data = useStaticQuery(graphql`
         query Header {
           image: file(relativePath: { eq: "IdentityWorX Logo.png" }) {
@@ -109,20 +87,23 @@ const NavBar = () => {
         }
       `)
 
+
     return(
-        <StyledBar>
-            <StyledHeader><Img fixed={data.image.childImageSharp.fixed} /></StyledHeader>
-            <StyAnnounce to="/services/#test2">**WE ARE NOW SELLING PERSONALIZED MASKS**</StyAnnounce>
-            <StyledMenuGroup>
+        <div className="NavBar">
+            <div className="Logo"><Img fixed={data.image.childImageSharp.fixed} /></div>
+            <div className="Announcement"><StyAnnounce to="/contact">**CALL OR EMAIL FOR A FREE QUOTE!**</StyAnnounce></div>
+            <div className="LinkGroup">
                 <StyledLink to="/">Home</StyledLink>
                 <StyDash />
                 <StyledLink to="/about">About</StyledLink>
                 <StyDash />
                 <StyledLink to="/services">Services</StyledLink>  
                 <StyDash />
-                <StyledLink to="/contact">Contact Us</StyledLink> 
-            </StyledMenuGroup>
-        </StyledBar>
+                <StyledLink to="/contact">Contact Us</StyledLink>     
+            </div>
+            <FaBars className="HamMenu"  />
+        </div>
+        
     )
   }
 

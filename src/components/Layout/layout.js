@@ -6,7 +6,6 @@ import "typeface-roboto"
 
 const StyDiv = styled.div`
     font-family: "roboto";
-    float: left;
     width: 100%;
     display: flex;
     flex-direction: column;

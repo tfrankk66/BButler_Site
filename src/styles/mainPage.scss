@@ -1,0 +1,52 @@
+@import './app.scss';
+
+.NavBar {
+    background-color: $secondary-color;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 5%;
+    position: fixed;
+    top: 0;
+    box-shadow: 0px 1px 3px grey;
+    border-bottom: 1px solid grey;
+    z-index: 1;
+}
+
+.Logo{
+  display: flex;
+  height: 100%;
+  margin: 0em 0em 0em 1em;
+}
+
+.Announcement{
+  margin: 0em 0em 0em 3em;
+  @media (max-width: 900px) {
+    display: none;
+  }
+}
+
+.LinkGroup{
+  height: 100%;;
+  width: 20%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  
+  @media (max-width: 900px) {
+    display: none;
+  }
+}
+
+
+.HamMenu {
+    width: 25%;
+    height: 50%;
+
+    @media (min-width: 900px) {
+      display: none;
+    }
+}
