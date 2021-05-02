@@ -10,7 +10,7 @@ const slides = [
       author: '-J.J. with Attic Kings'},
 
     { body: '"Extreme Accuracy! Bob at IdentityWorX has numbered over 250 jerseys for my company over the' +
-            'past three years and we have yet to run into an issue! The jerseys were completed quickly and' + 
+            ' past three years and we have yet to run into an issue! The jerseys were completed quickly and' + 
             ' correctly each year, and our customers couldn’t be happier with the final product. I would recommend' + 
             ' IdentityWorX to anyone that needs quality heat transfer naming and numbering."',
       author: '-Mitch Bloom, Bloom Marketing Cocepts'},
