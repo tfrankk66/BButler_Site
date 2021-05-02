@@ -5,7 +5,7 @@ import styled from "styled-components"
 
 const slides = [
     { body: '"These guys are great! Great pricing! Fast service! Bob even delivered to me because' +
-            'it was on his way home from work.  He even gave me a few free hats with my logo on them.' +
+            ' it was on his way home from work.  He even gave me a few free hats with my logo on them.' +
             'I would highly recommend this company."',
       author: '-J.J. with Attic Kings'},
 
@@ -15,7 +15,7 @@ const slides = [
             ' IdentityWorX to anyone that needs quality heat transfer naming and numbering."',
       author: '-Mitch Bloom, Bloom Marketing Cocepts'},
 
-    { body: '"I have had the pleasure of working with at IdentityWorX for at least the last 10 years,.throughout that time, he has always gone the extra mile for us.  He has always produced proofs for approval, and once approved, is meticulous in the quality of his production work.  Our customers have been pleased...especially by the fact that if he promised to do the order by a certain date, he follows through with his word.  Whether one or a hundred, Bob has always been easy to work with.  We would recommend him to anyone!!"',
+    { body: '"I have had the pleasure of working with at IdentityWorX for at least the last 10 years, throughout that time, he has always gone the extra mile for us.  He has always produced proofs for approval, and once approved, is meticulous in the quality of his production work.  Our customers have been pleased...especially by the fact that if he promised to do the order by a certain date, he follows through with his word.  Whether one or a hundred, Bob has always been easy to work with.  We would recommend him to anyone!!"',
       author: '-Margot Morris Dawkins, C.A.S. Atlanta Advertising Novelty'},
 
     {body: 'Customer Service A+. Decoration Quality A+. Turnaround Time A+. So far Bob has done a few jobs for me and I’m very impressed with the great service and quality I have received.  The shirts and jerseys came out perfect!  Bob went out of his way to help me and he’s been a tremendous asset to my own business.',
