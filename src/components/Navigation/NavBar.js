@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React from "react"
 import styled from "styled-components"
 import { Link } from "gatsby"
 import { FaBars } from 'react-icons/fa'
@@ -73,8 +73,7 @@ const StyAnnounce = styled(Link)`
 `
 
 const NavBar = () => {
-  const [hamToggle, setHamToggle] = useState(false);
-
+  
   const data = useStaticQuery(graphql`
         query Header {
           image: file(relativePath: { eq: "IdentityWorX Logo.png" }) {
